@@ -315,7 +315,7 @@ portfolioBtn.onclick = function() {
   <p class="projectInfo">The portfolio here is one of the projects I have created.This portfolio has been created using HTML, CSS and JavaScript only. This project helped me to understand my skills better.</p>
   
   <div class="getCodeLink">
-    <a href="" class="cv__btn">View Code</a>
+    <a href="https://github.com/isnayousuf/single-page-portfolio-self" class="cv__btn">View Code</a>
   </div>
   
   </div>`
