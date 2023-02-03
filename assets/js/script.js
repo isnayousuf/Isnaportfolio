@@ -246,10 +246,16 @@ const swiper = new Swiper(".slide-content", {
       // })
 
       // Clear input fileds after sent
+        contactMessage.classList.add('color-blue')
       contactMessage.textContent = "Message Recieved"
+     
       contactName.value = ''
       contactEmail.value = ''
       contactProject.value = ''
+      setTimeout( ()=> {
+        contactMessage.textContent = ''
+      }, 2000)
+
     }
 
   // }
