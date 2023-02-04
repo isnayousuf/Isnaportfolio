@@ -105,7 +105,7 @@ sr.reveal(`.skills__content:nth-child(1), .about__img ,.contact__content:nth-chi
 sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {
   origin: "right",
 });
-sr.reveal(`.footer__container`, { interval: 100, origin: "bottom", });
+sr.reveal(`.footer__container, .banner__social `, { interval: 100, origin: "bottom", });
 
 const filterButtons = document.querySelector("#filter-btns").children;
 const items = document.querySelector(".project-listing").children;
@@ -172,7 +172,7 @@ const swiper = new Swiper(".slide-content", {
   grabCursor: "true",
   speed: 1000,
   autoplay: {
-    delay: 4000,
+    delay: 3000,
   },
   pagination: {
     el: ".swiper-pagination",
