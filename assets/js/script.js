@@ -203,41 +203,77 @@ const contactForm = document.getElementById("contact-form"),
   contactProject = document.getElementById("contact-project");
 contactMessage = document.getElementById("contact-message");
 sendBtn = document.getElementById("send_btn");
-const sendEmail = (e) => {
-  e.preventDefault();
-  if (
-    contactName.value === "" ||
-    contactEmail.value === "" ||
-    contactProject.value === ""
-  ) {
-    contactMessage.classList.remove("color-blue");
-    contactMessage.classList.add("color-red");
-    contactMessage.textContent = "Please fill all inputs first";
-  } else {
-    contactName.value = "";
-    contactEmail.value = "";
-    contactProject.value = "";
-    setTimeout(() => {
-      modal.style.display = "block";
-      modalData.innerHTML = `
-        <div class="thanks__container  container grid section__border">
-        <h3 class="success_msg">Form submitted successfully!!</h3>
-       
-        <div class="heart_div">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
-      </div>
-        <p>
-          Thanks!! for initiating the conversation.
-          
-        </p>
-          <p>I will get back to you as early as possible.</p>
-         </div>
-       `;
-      contactMessage.textContent = "";
-    }, 100);
-  }
+let contactModal = document.getElementById('contact-modal');
+let thanksMsg = document.getElementById('thanks-msg');
+let closeContactBtn = document.getElementById('close-contact')
+closeContactBtn.onclick = function () {
+  contactModal.style.display = "none";
 };
-sendBtn.addEventListener("click", sendEmail);
+const sendEmail = (e)=> {
+  e.preventDefault()
+  if(contactName.value === ''|| contactEmail.value=== '' || contactProject.value === '') {
+    contactMessage.classList.remove('color-blue')
+    contactMessage.classList.add('color-red')
+
+    contactMessage.textContent = 'Wrie all the input fields'
+
+  }
+
+  else {
+    // service id / template id  /form_id / formPublic key
+    emailjs.sendForm('service_tphmlox', 'template_t6lyt1o', '#contact-form', 'Hhp-G121AyKXZZGYE')
+    .then( ()=> {
+      contactMessage.classList.add('color-blue');
+      contactMessage.textContent = "Sending..."
+    setTimeout(() => {
+      contactModal .style.display = "block";
+      thanksMsg.innerHTML = `
+     
+    <div class="thanks__container">
+      <h3 class="success_msg">Form submitted successfully!!</h3>
+     
+      <div class="heart_div">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+      </div>
+      <p>
+        Thanks!! for initiating the conversation.
+        
+      </p>
+        <p>I will get back to you as early as possible.</p>
+   </div>
+       `;
+    contactMessage.textContent = "";
+
+    }, 3000);
+
+    }, (error)=> {
+      alert('Oops! Somthing just crashed.Please try again after later')
+    })
+
+    // Clear input fileds after sent
+    // contactMessage.textContent = "Message Recieved"
+    contactName.value = ''
+    contactEmail.value = ''
+    contactProject.value = ''
+  }
+
+}
+contactForm.addEventListener('submit', sendEmail)
+sendBtn.addEventListener('click', sendEmail)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var modal = document.getElementById("myModal");
 let wordEmbedBtn = document.getElementById("word-embed-cta");

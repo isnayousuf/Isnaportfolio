@@ -435,7 +435,7 @@
                 <div class="row">
                     <div class="filter-buttons">
                         <ul id="filter-btns">
-                            <li class="active" data-target="all">ALL</li>
+                            <li class="active" data-target="all">All</li>
                             <li data-target="JavaScript">JavaScript Projects</li>
                             <li data-target="CSS">Css Artwork</li>
                             <!-- <li data-target="ReactJs">ReactJs Projects</li> -->
@@ -666,27 +666,28 @@
                         <i class="ri-send-plane-line"></i>Have some project?
                     </h3>
 
-                     <form  action="https://formsubmit.co/isnayousuf77@gmail.com" method="POST" class="contact__form" id="contact-form">
+                     <!-- <form  action="https://formsubmit.co/isnayousuf77@gmail.com" method="POST" class="contact__form" id="contact-form"> -->
+                        <form method="POST" class="contact__form" id="contact-form">
 
                         <div class="contact__form-div">
                             <label class="contact__form-tag">Name</label>
-                            <input type="text" placeholder="Your name here" 
+                            <input type="text" placeholder="Your name" 
                             name="user_fname" class="contact__form-input" id="contact-name" required>
                         </div>
 
                         <div class="contact__form-div">
                             <label class="contact__form-tag">Mail</label>
-                            <input  type="email" placeholder="Your email here"
+                            <input  type="email" placeholder="Your email"
                              name="user_emailid"
                                 class="contact__form-input" id="contact-email" required >
                         </div>
 
-                        <input type="hidden" name="_next" value="https://superlative-elf-758ce6.netlify.app/thanks.html">
-                        <input type="hidden" name="_autoresponse" value="Thanks for getting in touch.Will get back to you on this as soon as possible.">
+                        <!-- <input type="hidden" name="_next" value="https://superlative-elf-758ce6.netlify.app/thanks.html"> -->
+                        <!-- <input type="hidden" name="_autoresponse" value="Thanks for getting in touch.Will get back to you on this as soon as possible."> -->
                         <div class="contact__form-div contact__form-area">
                             <label class="contact__form-tag">Project</label>
                             <textarea name="user_info" class="contact__form-input" id="contact-project"
-                                placeholder="write your project here" required></textarea>
+                                placeholder="Type your message " required></textarea>
                         </div>
 
                         <p class="contact__message" id="contact-message"></p>
@@ -704,6 +705,25 @@
 
             </div>
         </section>
+
+        <div class="modal-container">
+            <div id="contact-modal" class="thanks-modal">
+
+                <!-- Modal content -->
+                <div class="thanks-modal-content" >
+                    <div>
+                        <span class="close" id="close-contact">&times;</span>
+                    </div>
+
+                    <div class="thanks-msg" id="thanks-msg" ></div>
+                    
+
+                </div>
+                
+              </div>
+            <div class="overlay-modal hidden"></div>
+
+        </div>
 
     </main>
 
