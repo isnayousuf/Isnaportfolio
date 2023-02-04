@@ -223,8 +223,6 @@ const sendEmail = (e)=> {
     // service id / template id  /form_id / formPublic key
     emailjs.sendForm('service_tphmlox', 'template_t6lyt1o', '#contact-form', 'Hhp-G121AyKXZZGYE')
     .then( ()=> {
-      contactMessage.classList.add('color-blue');
-      contactMessage.textContent = "Sending..."
     setTimeout(() => {
       contactModal .style.display = "block";
       thanksMsg.innerHTML = `
@@ -243,18 +241,17 @@ const sendEmail = (e)=> {
    </div>
        `;
     contactMessage.textContent = "";
-
-    }, 3000);
-
-    }, (error)=> {
-      alert('Oops! Somthing just crashed.Please try again after later')
-    })
-
-    // Clear input fileds after sent
-    // contactMessage.textContent = "Message Recieved"
     contactName.value = ''
     contactEmail.value = ''
     contactProject.value = ''
+    sendBtn.innerHTML = "Send"
+    }, 2000);
+
+    }, (error)=> {
+      alert('Oops! Somthing just crashed.Please try again after later')
+      sendBtn.innerHTML= 'Send' 
+    }) 
+    sendBtn.innerHTML= 'Sending..'  
   }
 
 }
