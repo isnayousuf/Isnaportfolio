@@ -871,10 +871,48 @@ body.dark-theme {
   color: rgb(164, 49, 49);
 }
 
-
-
 .success_msg {
   color: rgb(101, 134, 36);
+}
+
+.error_msg {
+  color: rgb(164, 49, 49, 0.9);
+}
+
+.emoji-div {
+  margin: 2rem 0;
+  height: 200px;
+}
+.emoji-div img {
+
+  height: 100%;
+}
+
+.alt-div {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.alt-div p {
+  margin: 1rem 0;
+
+}
+.alt-div ul li {
+  list-style-type: disc;
+  margin-bottom: 0.7rem;
+}
+.email-btn-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.email-btn {
+  color: #fff;
+
 }
 
 .waves {

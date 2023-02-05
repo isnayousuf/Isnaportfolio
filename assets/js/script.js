@@ -244,12 +244,54 @@ const sendEmail = (e)=> {
     contactName.value = ''
     contactEmail.value = ''
     contactProject.value = ''
-    sendBtn.innerHTML = "Send"
+    sendBtn.innerHTML = `
+    Send
+    <i class="ri-arrow-right-up-line"></i>
+    `
     }, 2000);
 
     }, (error)=> {
-      alert('Oops! Somthing just crashed.Please try again after later')
-      sendBtn.innerHTML= 'Send' 
+      setTimeout(() => {
+        contactModal .style.display = "block";
+        thanksMsg.innerHTML = `
+       
+      <div class="thanks__container">
+        <h3 class="error_msg">Couldn't send your message!!</h3>
+       
+        <div class="emoji-div">
+        <img src="./assets/images/error.jpg" alt="">
+         
+         </div>
+        <div class="alt-div">
+         <p>Here are some of the things you can try:</p>
+          <ul>
+          <li>
+          Checking the network cables, modem and router.</li>
+          <li>Reconnecting to Wi-Fi.</li>
+          </ul>
+           <p>Alternatively you can try to drop your message here </p>
+          <div class="email-btn-container">
+                                    <a href="mailto:isnayousuf77@gmail.com"
+                                class="cv__btn email-btn">
+                                Write to me
+                                <i class="ri-arrow-right-line"></i>
+                                </a>
+          </div>
+
+
+        </div>
+          
+     </div>
+         `;
+      sendBtn.innerHTML = `
+      Send
+      <i class="ri-arrow-right-up-line"></i>
+      `
+      }, 1000);
+      sendBtn.innerHTML = `
+      Send
+      <i class="ri-arrow-right-up-line"></i>
+      ` 
     }) 
     sendBtn.innerHTML= 'Sending..'  
   }
