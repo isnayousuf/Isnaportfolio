@@ -924,6 +924,8 @@ body.dark-theme {
 }
 
 .made_with .svg-heart {
+  width: 18px;
+  height: 18px;
    margin: 0 5px;
   fill: rgb(164, 49, 49);
 }
