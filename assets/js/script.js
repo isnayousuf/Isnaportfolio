@@ -232,7 +232,7 @@ const sendEmail = (e)=> {
     emailjs.sendForm('service_tphmlox', 'template_t6lyt1o', '#contact-form', 'Hhp-G121AyKXZZGYE')
     .then( ()=> {
     setTimeout(() => {
-      contactModal .style.display = "block";
+      contactModal.style.display = "block";
       thanksMsg.innerHTML = `
      
     <div class="thanks__container">
@@ -254,9 +254,14 @@ const sendEmail = (e)=> {
     contactProject.value = ''
     sendBtn.innerHTML = `
     Send
-    <i class="ri-arrow-right-up-line"></i>
+    <svg class="send-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+    height="24">
+    <path fill="none" d="M0 0h24v24H0z" />
+    <path
+        d="M1.923 9.37c-.51-.205-.504-.51.034-.689l19.086-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.475.553-.717.07L11 13 1.923 9.37zm4.89-.2l5.636 2.255 3.04 6.082 3.546-12.41L6.812 9.17z" />
+    </svg>
     `
-    }, 2000);
+    }, 300);
 
     }, (error)=> {
       setTimeout(() => {
@@ -282,7 +287,7 @@ const sendEmail = (e)=> {
                                     <a href="mailto:isnayousuf77@gmail.com"
                                 class="cv__btn email-btn">
                                 Write to me
-                                <svg class="svg-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/></svg>
+                                <svg class="dynamic-svg"  class="svg-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"/></svg>
                                 </a>
           </div>
 
@@ -293,15 +298,19 @@ const sendEmail = (e)=> {
          `;
       sendBtn.innerHTML = `
       Send
-      <i class="ri-arrow-right-up-line"></i>
+      <svg class="send-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                    height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M1.923 9.37c-.51-.205-.504-.51.034-.689l19.086-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.475.553-.717.07L11 13 1.923 9.37zm4.89-.2l5.636 2.255 3.04 6.082 3.546-12.41L6.812 9.17z" />
+                                </svg>
       `
-      }, 1000);
-      sendBtn.innerHTML = `
-      Send
-      <i class="ri-arrow-right-up-line"></i>
-      ` 
+      }, 300);
     }) 
-    sendBtn.innerHTML= 'Sending..'  
+    sendBtn.innerHTML= `Sending..
+    <svg class="dynamic-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H7.004V6h11v11h-2V9.414z"/></svg>
+    
+    `
   }
 
 }

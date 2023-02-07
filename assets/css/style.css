@@ -929,6 +929,9 @@ body.dark-theme {
    margin: 0 5px;
   fill: rgb(164, 49, 49);
 }
+.dynamic-svg {
+  fill: #fff;
+}
 
 .success_msg {
   color: rgb(101, 134, 36);
