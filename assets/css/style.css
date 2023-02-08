@@ -169,6 +169,9 @@ body.dark-theme {
   border-radius: 3rem;
   padding: 1rem;
   transition: background 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
 }
 
 .nav__logo,
@@ -219,7 +222,7 @@ body.dark-theme {
 .nav__close {
   position: absolute;
   right: 1.5rem;
-  bottom: 0.7rem;
+  top: 0.7rem;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -291,14 +294,12 @@ body.dark-theme {
 }
 
 .type__text {
-  margin: 0;
+
   padding: 0;
   width: 100%;
   font-size: 2.3rem;
   margin: 3.5rem 0 1rem;
   font-weight: 600;
-  color: #6b21a8;
-  color: #6366f1;
   color: var(--text-color);
   font-family: 'Pacifico', cursive;
   text-align: center;
@@ -1202,10 +1203,8 @@ body.dark-theme {
       margin-inline: 1rem;
     }
     .nav {
-      padding: 0.5rem 1.5rem;
-    }
-    .nav__menu {
-      padding-bottom: 4rem;
+      padding: 0.7rem 1.5rem;
+    
     }
     .nav__list {
       gap: 1rem 1.25rem;
@@ -1217,12 +1216,21 @@ body.dark-theme {
     .nav__logo {
       font-size: 22px;
     }
-  
+    .say__hi {
+      font-size: 1.2rem;
+    }
+    .wave {
+      font-size: 2rem;
+    }
+    .type__text{
+      font-size: 1.3rem;
+      margin:0 ;
+    }
+    
     .banner__img {
-      margin-top: 2rem;
+      margin-top: 1rem;
       margin-bottom: 5rem;
     }
-  
   
     .about__grid {
       flex-direction: column;
@@ -1232,8 +1240,8 @@ body.dark-theme {
     .about__img {
       width: 90vw;
       padding: 0 auto;
-      height: 400px;
-      margin-bottom: 2rem;
+      height: 250px;
+      margin-bottom: 1.5rem;
     }
     .about__right {
       width: 100%;
@@ -1248,21 +1256,19 @@ body.dark-theme {
       justify-content: center;
       flex-direction: column;
     }
-
-  
     .project-listing {
       grid-template-columns: 1fr;
     }
-    .project_card {
-      width: 400px !important;
-      margin-bottom: 1rem;
+    .project-card {
+      margin-bottom: 2rem;
     }
     .projects__container {
       overflow: hidden;
     }
-  
+
     .contact__form {
-      width: 87vw;
+      margin: 0 auto;
+      width: 80vw;
     }
     .skills_info {
       grid-template-columns: repeat(2, 1fr);
@@ -1281,7 +1287,10 @@ body.dark-theme {
     .contact__form {
       width: 87vw;
     }
-  
+    .contact__title {
+      font-size: 1.2rem;
+    }
+
     .project-listing {
       width: 70%;
       margin-left: auto;
@@ -1327,6 +1336,7 @@ body.dark-theme {
       box-shadow: none;
       column-gap: 3rem;
       margin-inline: 1.5rem;
+ 
 
     }
     .nav__logo {
@@ -1622,19 +1632,19 @@ body.dark-theme {
   @media screen and (max-width: 1023px) {
     .nav__menu {
       position: fixed;
-      width: 88%;
+      width: 90%;
       left: 0;
       right: 0;
       bottom: -60%;
       margin: 0 auto;
       background: var(--body-color);
       box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
-      padding: 2rem 1.5rem 5rem;
+      /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+      padding: 4rem 1.5rem 3rem;
       border-radius: 2rem;
       transition: bottom 0.3s;
     }
   }
-
 
 
 
