@@ -178,6 +178,7 @@ body.dark-theme {
 .nav__toggle,
 .nav_close {
   color: var(--title-color);
+  fill: var(--title-color);
 }
 
 .nav__logo {
@@ -229,6 +230,7 @@ body.dark-theme {
 
 .nav__close .close-svg {
   width: 1.5rem;
+  fill: var(--title-color);
 }
 
 .active-link {
@@ -1421,8 +1423,12 @@ body.dark-theme {
   
     .dark-theme .nav,
     .dark-theme .nav__menu {
-      background-color: var(--body-color);
+      background-color: var(--body-color) !;
       box-shadow: none;
+    }
+
+    .dark-theme .menu-icon {
+      fill: #fff !important;
     }
     .dark-theme .cv__btn {
       background: #fff;
