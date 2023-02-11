@@ -16,6 +16,8 @@
     hsla(207, 65%, 65%, 1)
   );
 
+ 
+
   --body-font: "Roboto", sans-serif;
   --title-font: "Lora", serif;
   --biggest-font-size: 1.5rem;
@@ -32,7 +34,13 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-
+:root[data-applied-mode="light"] {
+  --title-color: hsl(207, 4%, 16%);
+--text-color: hsl(207, 4%, 28%);
+--text-color-light: hsl(207, 4%, 56%);
+--body-color: hsl(207, 4%, 99%);
+--container-color: hsl(207, 4%, 95%);
+}
 /* Responsive typography */
 @media screen and (min-width: 1024px) {
   :root {
@@ -108,6 +116,12 @@ body.dark-theme {
   --container-color: hsl(207, 4%, 12%);
 }
 
+:root [data-applied-mode ="dark"] {
+  --title-color: hsl(207, 4%, 95%);
+  --text-color: hsl(207, 4%, 65%);
+  --body-color: hsl(207, 4%, 10%);
+  --container-color: hsl(207, 4%, 12%);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -621,11 +635,15 @@ body.dark-theme {
   justify-content: center;
   align-items: center;
 }
+
 .card .certs-icon {
   display: block;
   font-size: 2rem;
   color: var(--title-color);
+  fill: var(--title-color);
+  fill: var(--text-color);
   transition: transform 0.8s;
+  margin-bottom: 1rem;
 }
 
 .card:hover .certs-icon {
@@ -720,17 +738,9 @@ body.dark-theme {
   font-weight: initial;
 }
 
-.contact__info
-{
-  display: grid;
-}
 .contact__data,
 .contact__form {
   display: grid;
-}
-
-.contact__info {
-  row-gap: 2rem;
 }
 .contact_data-main {
   display: flex;
@@ -761,18 +771,8 @@ body.dark-theme {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
  
 }
-.contact-svg {
-  fill: var(--body-color);
-}
-.contact__data-title:hover .contact-svg {
-  fill: #001;
-}
 
-.contact__data-info {
-  font-size: var(--small-font-size);
-  font-family: var(--title-font);
-  color: var(--title-color);
-}
+
 
 .contact__button {
   width: max-content;
@@ -1476,9 +1476,28 @@ body.dark-theme {
     }
     .contact__container {
       display: flex;
-      justify-content: center;
-      column-gap: 8rem;
     } 
+
+    .contact-left {
+      width: 50%;
+    }
+
+     .contact__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 50%;
+    } 
+
+    /* .contact__content:nth-child(2) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      width: 40%;
+      border: 2px solid green;
+    } */
   }
   
   @media screen and (min-width: 1048px) {
@@ -1608,9 +1627,6 @@ body.dark-theme {
     }
     .contact__title i {
       font-size: 1.25rem;
-    }
-    .contact__data-info {
-      font-size: var(--normal-font-size);
     }
     .contact__form {
       row-gap: 2.5rem;

@@ -63,39 +63,56 @@ const scrollUp = () => {
 window.addEventListener("scroll", scrollUp);
 
 // /*=============== DARK LIGHT THEME ===============*/
-const themeButton = document.getElementById("theme-button");
-const darkTheme = "dark-theme";
-const iconTheme = "ri-sun-line";
+// const themeButton = document.getElementById("theme-button");
+// const darkTheme = "dark-theme";
+// const sunIcon = document.getElementById('sun-icon')
 
-const sunIcon = document.getElementById('sun-icon')
+// const selectedTheme = localStorage.getItem("selected-theme");
 
-const selectedTheme = localStorage.getItem("selected-theme");
-const selectedIcon = localStorage.getItem("selected-icon");
-const getCurrentTheme = () =>
-  document.body.classList.contains(darkTheme) ? "dark" : "light";
-    themeButton.addEventListener('click', function() {
+// const getCurrentTheme = () =>
+//   document.body.classList.contains(darkTheme) ? "dark" : "light";
+//     themeButton.addEventListener('click', function() {
     
-         sunIcon.style.display= "block"
-         themeButton.style.display = "none";
-    })
+//          sunIcon.style.display= "block"
+//          themeButton.style.display = "none";
+//     })
 
-    sunIcon.addEventListener('click', function(){
-      sunIcon.style.display= "none"
-      themeButton.style.display = "block";
+//     sunIcon.addEventListener('click', function(){
+//       sunIcon.style.display= "none"
+//       themeButton.style.display = "block";
       
 
-    })
+//     })
   
-themeButton.addEventListener("click", () => {
-  document.body.classList.toggle(darkTheme);
-  localStorage.setItem("selected-theme", getCurrentTheme());
-});
+// themeButton.addEventListener("click", () => {
+//   document.body.classList.toggle(darkTheme);
+//   localStorage.setItem("selected-theme", getCurrentTheme());
+// });
 
-sunIcon.addEventListener("click", () => {
-  document.body.classList.toggle(darkTheme);
-  localStorage.setItem("selected-theme", getCurrentTheme());
-});
+// sunIcon.addEventListener("click", () => {
+//   document.body.classList.toggle(darkTheme);
+//   localStorage.setItem("selected-theme", getCurrentTheme());
+// });
 
+
+
+
+const themeButton = document.getElementById("theme-button");
+
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.add("dark-theme");
+}
+
+themeButton.addEventListener("click", function () {
+  document.body.classList.toggle("dark-theme");
+
+  let theme = "light";
+  if (document.body.classList.contains("dark-theme")) {
+    theme = "dark";
+  }
+  localStorage.setItem("theme", theme);
+});
 
 
 const sr = ScrollReveal({
