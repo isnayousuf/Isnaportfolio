@@ -94,6 +94,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+button {
+  outline: none;
+  border: none;
+}
 
 /*=============== THEME ===============*/
 .nav__buttons {
