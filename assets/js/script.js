@@ -350,6 +350,7 @@ sendBtn.addEventListener('click', sendEmail)
 
 var modal = document.getElementById("myModal");
 let wordEmbedBtn = document.getElementById("word-embed-cta");
+let notesBtn = document.getElementById("notes-cta")
 let portfolioBtn = document.getElementById("portfolio-cta");
 let weatherAppBtn = document.getElementById("weather-app-cta");
 let clockBtn = document.getElementById("clock-cta");
@@ -373,6 +374,22 @@ wordEmbedBtn.onclick = function () {
   
   <div class="getCodeLink">
     <a href="https://github.com/isnayousuf/WordEmbed" class="cv__btn">View Code</a>
+  </div>
+  </div>
+ `;
+};
+
+notesBtn.onclick = function () {
+  modal.style.display = "block";
+  modalData.innerHTML = `
+  <div class="projectInfoContainer">
+  <div class="projectImage">
+  <video src="./assets/images/notes.mp4" loop controls autoplay muted></video>
+</div>
+  <p class="projectInfo">WordEmbed is a JavaScript application that provides the details of any word selected on a webpage. The details include word orign, word meaning, pronunciation etc. WordEmbed works by embedding the script in any third party website.y</p>
+  
+  <div class="getCodeLink">
+    <a href="https://github.com/isnayousuf/my-notes-app" class="cv__btn">View Code</a>
   </div>
   </div>
  `;
