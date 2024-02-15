@@ -1327,6 +1327,11 @@ body.dark-theme {
     .thanks-modal-content {
       width: 80%;
     }
+
+    .projectInfo  {
+      width: 100%;
+    }
+  
   }
     @media only screen and (max-width: 950px) and (min-width: 800px)  {
     .nav,

@@ -370,7 +370,7 @@ wordEmbedBtn.onclick = function () {
   <div class="projectImage">
   <video src="./assets/images/wordembed.mp4" loop controls autoplay muted></video>
 </div>
-  <p class="projectInfo">WordEmbed is a JavaScript application that provides the details of any word selected on a webpage. The details include word orign, word meaning, pronunciation etc. WordEmbed works by embedding the script in any third party website.y</p>
+  <p class="projectInfo">WordEmbed is a JavaScript application that provides the details of any word selected on a webpage. The details include word orign, word meaning, pronunciation etc. WordEmbed works by embedding the script in any third party website.</p>
   
   <div class="getCodeLink">
     <a href="https://github.com/isnayousuf/WordEmbed" class="cv__btn">View Code</a>
@@ -386,7 +386,7 @@ notesBtn.onclick = function () {
   <div class="projectImage">
   <video src="./assets/images/notes.mp4" loop controls autoplay muted></video>
 </div>
-  <p class="projectInfo">WordEmbed is a JavaScript application that provides the details of any word selected on a webpage. The details include word orign, word meaning, pronunciation etc. WordEmbed works by embedding the script in any third party website.y</p>
+  <p class="projectInfo">MyNotes is a javascript web application that helps us to keep track of our important items in the form of notes.It has been built with the functionality to Add a new note, edit an existing note or delete it.</p>
   
   <div class="getCodeLink">
     <a href="https://github.com/isnayousuf/my-notes-app" class="cv__btn">View Code</a>
