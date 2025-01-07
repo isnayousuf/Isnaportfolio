@@ -463,7 +463,7 @@ about CSS. This artwork helped me to understand the box-shadow property in an aw
 </p>
 
 <div class="getCodeLink">
-  <a href="https://github.com/isnayousuf/carrom_board" class="cv__btn">View Code</a>
+  <a href="https://github.com/isnayousuf/css-artwork" class="cv__btn">View Code</a>
 </div>
 
 </div>`;
@@ -481,7 +481,7 @@ pencilBtn.onclick = function () {
   </p>
   
   <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/pencil" class="cv__btn">View Code</a>
+    <a href="https://github.com/isnayousuf/css-artwork" class="cv__btn">View Code</a>
   </div>
   
   </div>`;
@@ -504,7 +504,7 @@ keyboardBtn.onclick = function () {
   </p>
   
   <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/my_keyboard" class="cv__btn">View Code</a>
+    <a href="https://github.com/isnayousuf/css-artwork" class="cv__btn">View Code</a>
   </div>
   </div>
  `;
@@ -525,7 +525,7 @@ phoneBtn.onclick = function () {
   </p>
   
   <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/CSS_Alphabetse" class="cv__btn">View Code</a>
+    <a href="https://github.com/isnayousuf/css-artwork" class="cv__btn">View Code</a>
   </div>
   </div>
  `;
@@ -544,7 +544,7 @@ ludoBtn.onclick = function () {
   </p>
   
   <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/ludo_UI" class="cv__btn">View Code</a>
+    <a href="https://github.com/isnayousuf/css-artwork" class="cv__btn">View Code</a>
   </div>
   
   </div>`;
