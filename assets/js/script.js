@@ -407,7 +407,7 @@ qrCodeBtn.onclick = function () {
 QR Code Generator is a JavaScript web application that generates a QR code for any input string. It allows users to easily create and download the generated QR code.</p>
   
   <div class="getCodeLink">
-    // <a href="../images/qr-generator.mov" class="cv__btn">View Code</a>
+    <a href="https://github.com/isnayousuf/qr-code-generator" class="cv__btn">View Code</a>
   </div>
   </div>
  `;
