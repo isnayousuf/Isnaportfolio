@@ -351,6 +351,7 @@ sendBtn.addEventListener('click', sendEmail)
 var modal = document.getElementById("myModal");
 let wordEmbedBtn = document.getElementById("word-embed-cta");
 let notesBtn = document.getElementById("notes-cta")
+let qrCodeBtn = document.getElementById("qr-cta");
 let portfolioBtn = document.getElementById("portfolio-cta");
 let weatherAppBtn = document.getElementById("weather-app-cta");
 let clockBtn = document.getElementById("clock-cta");
@@ -390,6 +391,23 @@ notesBtn.onclick = function () {
   
   <div class="getCodeLink">
     <a href="https://github.com/isnayousuf/my-notes-app" class="cv__btn">View Code</a>
+  </div>
+  </div>
+ `;
+};
+
+qrCodeBtn.onclick = function () {
+  modal.style.display = "block";
+  modalData.innerHTML = `
+  <div class="projectInfoContainer">
+  <div class="projectImage">
+  <video src="./assets/images/qr-generator.mov" loop controls autoplay muted></video>
+</div>
+  <p class="projectInfo">
+QR Code Generator is a JavaScript web application that generates a QR code for any input string. It allows users to easily create and download the generated QR code.</p>
+  
+  <div class="getCodeLink">
+    // <a href="../images/qr-generator.mov" class="cv__btn">View Code</a>
   </div>
   </div>
  `;
