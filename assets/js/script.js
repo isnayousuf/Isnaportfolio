@@ -299,105 +299,6 @@ const sendEmail = (e)=> {
 contactForm.addEventListener('submit', sendEmail)
 sendBtn.addEventListener('click', sendEmail)
 
-// const reactProjects = [
-//   {
-//     name: "Youtube Clone",
-//     video: "./assets/images/notes.mp4", //Todo: add recording here
-//     description:
-//       "YouTube Clone built using React, Vite, and YouTube's Open API. This project features infinite scrolling, category-based feeds, search functionality, a 404 page, and full responsiveness.",
-//     repo: "https://github.com/isnayousuf/youtube-clone",
-//     techStack: ["HTML", "CSS", "ReactJs"],
-//   },
-//   {
-//     name: "News App",
-//     video: "./assets/images/wordembed.mp4", //Todo: add recording here
-//     description:
-//       "A simple and responsive news web application built using React and Bootstrap.This app allows users to search for news, filter by country, language, and category, and browse through paginated news articles.",
-//     repo: "https://github.com/isnayousuf/news-app",
-//     techStack: ["HTML", "Bootstrap", "ReactJS"],
-//   },
-// ];
-
-// const javascriptProjects = [
-//   {
-//     name: "WordEmbed",
-//     video: "./assets/images/wordembed.mp4",
-//     description:
-//       "WordEmbed is a JavaScript application that provides details of any word selected on a webpage. It includes origin, meaning, and pronunciation.",
-//     repo: "https://github.com/isnayousuf/WordEmbed",
-//     techStack: ["HTML", "CSS", "JavaScript"],
-//   },
-//   {
-//     name: "My Notes App",
-//     video: "./assets/images/notes.mp4",
-//     description:
-//       "MyNotes is a JavaScript web application that helps keep track of important notes. It allows adding, editing, and deleting notes.",
-//     repo: "https://github.com/isnayousuf/my-notes-app",
-//     techStack: ["HTML", "CSS", "JavaScript"],
-//   },
-//   {
-//     name: "QR Code Generator",
-//     video: "./assets/images/qrcode.mp4",
-//     description:
-//       "A simple tool to generate QR codes from any text or link using JavaScript.",
-//     repo: "https://github.com/isnayousuf/qr-code-generator",
-//     techStack: ["HTML", "CSS", "JavaScript"],
-//   },
-
-//   {
-//     name: "Portfolio",
-//     video: "./assets/images/portfolio.png",
-//     description:
-//       "The portfolio here is one of the projects I have created.This portfolio has been created using HTML, CSS and JavaScript only. This project helped me to understand my skills better.",
-//     repo: "https://github.com/isnayousuf/Isnaportfolio",
-//     techStack: ["HTML", "CSS", "JavaScript"],
-//   },
-//   {
-//     name: "Weather App",
-//     video: "./assets/images/weather.png",
-//     description:
-//       "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
-//     repo: "https://github.com/isnayousuf/weather-application",
-//     techStack: ["HTML", "CSS", "JavaScript"],
-//   },
-//   {
-//     name: "Analog Clock",
-//     video: "./assets/images/weather.png",
-//     description:
-//       "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
-//     repo: "https://github.com/isnayousuf/weather-application",
-//     techStack: ["HTML", "CSS", "JavaScript"],
-//   },
-// ];
-
-// const cssProjects = [
-//   {
-//     name: "Carrom Board",
-//     displayImg: "../images/carrom.png",
-//     description:
-//       "This is one of the CSS artwork that I created while learning about CSS. This artwork helped me to understand the box-shadow property in an awesome way.",
-//     repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
-//     techStack: ["HTML", "CSS"],
-//   },
-//   {
-//     name: "Keyboard",
-//     displayImg: "../images/keypad.png",
-//     description:
-//       " This is a CSS artwork that I created while learning about CSS. This helped me to understand the positioning and layout property in CSS.",
-//     repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
-//     techStack: ["HTML", "CSS"],
-//   },
-
-//   {
-//     name: "Alphabets",
-//     displayImg: "../images/Alphabets.png",
-//     description:
-//       "Add description here",
-//     repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
-//     techStack: ["HTML", "CSS"],
-//   },
-// ];
-
 const projects = {
   ReactJs: [
     {
@@ -474,15 +375,24 @@ const projects = {
       displayImg: "../images/carrom.png",
       description:
         "This is one of the CSS artwork that I created while learning about CSS. This artwork helped me to understand the box-shadow property in an awesome way.",
-      repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
+      repo: "https://github.com/isnayousuf/css-artwork/tree/main/carrom-board",
       techStack: ["HTML", "CSS"],
     },
+    {
+      name: "Ludo UI",
+      displayImg: "../images/ludo.png",
+      description:
+        "This is one of the CSS artwork that I created while learning about CSS. This artwork helped me to understand the box-shadow property in an awesome way.",
+      repo: "https://github.com/isnayousuf/css-artwork/tree/main/ludo-ui",
+      techStack: ["HTML", "CSS"],
+    },
+
     {
       name: "Keyboard",
       displayImg: "../images/keypad.png",
       description:
-        " This is a CSS artwork that I created while learning about CSS. This helped me to understand the positioning and layout property in CSS.",
-      repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
+        "This is a CSS artwork that I created while learning about CSS. This helped me to understand the positioning and layout property in CSS.",
+      repo: "https://github.com/isnayousuf/css-artwork/tree/main/keyboard",
       techStack: ["HTML", "CSS"],
     },
 
@@ -490,7 +400,21 @@ const projects = {
       name: "Alphabets",
       displayImg: "../images/Alphabets.png",
       description: "Add description here",
-      repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
+      repo: "https://github.com/isnayousuf/css-artwork/tree/main/alphabets",
+      techStack: ["HTML", "CSS"],
+    },
+    {
+      name: "Monitor",
+      displayImg: "../images/monitor.png",
+      description: "Add description here",
+      repo: "https://github.com/isnayousuf/css-artwork/tree/main/monitor",
+      techStack: ["HTML", "CSS"],
+    },
+    {
+      name: "Doremon Cartoon",
+      displayImg: "../images/doremon.png",
+      description: "Add description here",
+      repo: "https://github.com/isnayousuf/css-artwork/tree/main/doremon-cartoon",
       techStack: ["HTML", "CSS"],
     },
   ],
@@ -526,10 +450,9 @@ function displayProjects(category = "ReactJs") {
     projectContainer.appendChild(projectCard);
   });
 
-  attachModalEventListeners(); // Attach event listeners for "Know More" buttons
+  attachModalEventListeners(); 
 }
 
-// Call function initially to load all projects
 displayProjects();
 
 
@@ -537,7 +460,7 @@ document.querySelectorAll("#filter-btns li").forEach((filterBtn) => {
   filterBtn.addEventListener("click", function () {
     const targetCategory = this.getAttribute("data-target");
 
-    displayProjects(targetCategory); // Update project list based on filter
+    displayProjects(targetCategory); 
 
     // Remove active class from all buttons, add to clicked one
     document
@@ -556,10 +479,8 @@ function attachModalEventListeners() {
       const project = projects[category][index];
 
       document.getElementById("lightbox-video").src = project.video || "";
-      document.getElementById("lightbox-description").textContent =
-        project.description;
+      document.getElementById("lightbox-description").textContent = project.description;
       document.getElementById("lightbox-repo").href = project.repo;
-
       document.getElementById("lightbox").classList.add("active");
     });
   });
@@ -569,7 +490,8 @@ function attachModalEventListeners() {
 document
   .querySelector(".close-lightbox")
   .addEventListener("click", function () {
-    document.getElementById("lightbox").classList.remove("active");
+    const lightbox = document.getElementById("lightbox")
+    lightbox.classList.remove("active");      
   });
 
 // Close when clicking outside the modal content
