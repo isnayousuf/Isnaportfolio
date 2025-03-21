@@ -1313,7 +1313,7 @@ body.dark-theme {
       justify-content: center;
       align-items: center;
       gap: 20px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-bottom: 1rem;
       color: var(--text-color-light);
     }
