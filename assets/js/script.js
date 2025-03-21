@@ -372,7 +372,7 @@ const projects = {
   CSS: [
     {
       name: "Carrom Board",
-      displayImg: "../images/carrom.png",
+      displayImg: "/assets/images/carrom.png",
       description:
         "This is one of the CSS artwork that I created while learning about CSS. This artwork helped me to understand the box-shadow property in an awesome way.",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/carrom-board",
@@ -380,7 +380,7 @@ const projects = {
     },
     {
       name: "Ludo UI",
-      displayImg: "../images/ludo.png",
+      displayImg: "/assets/images/ludo.png",
       description:
         "This is one of the CSS artwork that I created while learning about CSS. This artwork helped me to understand the box-shadow property in an awesome way.",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/ludo-ui",
@@ -389,7 +389,7 @@ const projects = {
 
     {
       name: "Keyboard",
-      displayImg: "../images/keypad.png",
+      displayImg: "/assets/images/keypad.png",
       description:
         "This is a CSS artwork that I created while learning about CSS. This helped me to understand the positioning and layout property in CSS.",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/keyboard",
@@ -398,21 +398,21 @@ const projects = {
 
     {
       name: "Alphabets",
-      displayImg: "../images/Alphabets.png",
+      displayImg: "/assets/images/Alphabets.png",
       description: "Add description here",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/alphabets",
       techStack: ["HTML", "CSS"],
     },
     {
       name: "Monitor",
-      displayImg: "../images/monitor.png",
+      displayImg: "/assets/images/monitor.png",
       description: "Add description here",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/monitor",
       techStack: ["HTML", "CSS"],
     },
     {
       name: "Doremon Cartoon",
-      displayImg: "../images/doremon.png",
+      displayImg: "/assets/images/doremon.png",
       description: "Add description here",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/doremon-cartoon",
       techStack: ["HTML", "CSS"],
@@ -476,9 +476,25 @@ function attachModalEventListeners() {
     button.addEventListener("click", function () {
       const category = this.getAttribute("data-category");
       const index = this.getAttribute("data-index");
-      const project = projects[category][index];
+      const projectVideo =  document.getElementById("lightbox-video");
+       const projectImg = document.getElementById("lightbox-img");
 
-      document.getElementById("lightbox-video").src = project.video || "";
+      const project = projects[category][index];
+       console.log("Image Path:", project.displayImg);
+       if (project.video) {
+        console.log("goes inside if");
+        
+         projectVideo.style.display = "block";
+         projectImg.style.display = "none";
+         projectVideo.src = project.video || "";
+       } else {
+        console.log("goes inside else");
+
+         projectVideo.style.display = "none";
+         projectImg.style.display = "block";
+         projectImg.src = `${project.displayImg}`;
+       }
+
       document.getElementById("lightbox-description").textContent = project.description;
       document.getElementById("lightbox-repo").href = project.repo;
       document.getElementById("lightbox").classList.add("active");
