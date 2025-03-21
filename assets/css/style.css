@@ -581,6 +581,7 @@ body.dark-theme {
 .know_more_container {
   display: flex;
   justify-content: center;
+  gap: 8px;
 }
 
 .prj_name {
@@ -608,13 +609,17 @@ body.dark-theme {
   font-size: var(--small-font-size);
   background: #001;
   color: var(--body-color);
+  border: 1px solid #001;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: none;
+
 }
 
 .know_more:hover {
-  box-shadow: none;
+  background: transparent;
+  color: #001;
 }
+
 .slide-container {
   max-width: 1120px;
   width: 100%;
@@ -1726,15 +1731,7 @@ body.dark-theme {
 }
 
 .lightbox .cv__btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-.lightbox .cv__btn:hover {
-    background: #0056b3;
+  display: inline-block;
 }
 
 .close-icon-container {

@@ -303,7 +303,10 @@ const projects = {
   ReactJs: [
     {
       name: "Youtube Clone",
-      video: "./assets/images/notes.mp4", //Todo: add recording here
+      projectDetails: {
+        hasExternalLink: true,
+        url: "https://youtube-clone-two-lemon.vercel.app/",
+      },
       description:
         "YouTube Clone built using React, Vite, and YouTube's Open API. This project features infinite scrolling, category-based feeds, search functionality, a 404 page, and full responsiveness.",
       repo: "https://github.com/isnayousuf/youtube-clone",
@@ -311,7 +314,10 @@ const projects = {
     },
     {
       name: "News App",
-      video: "./assets/images/wordembed.mp4", //Todo: add recording here
+      projectDetails: {
+        hasExternalLink: true,
+        url: "https://news-app-lovat-delta.vercel.app/",
+      },
       description:
         "A simple and responsive news web application built using React and Bootstrap.This app allows users to search for news, filter by country, language, and category, and browse through paginated news articles.",
       repo: "https://github.com/isnayousuf/news-app",
@@ -320,24 +326,24 @@ const projects = {
   ],
   JavaScript: [
     {
-      name: "WordEmbed",
-      video: "./assets/images/wordembed.mp4",
-      description:
-        "WordEmbed is a JavaScript application that provides details of any word selected on a webpage. It includes origin, meaning, and pronunciation.",
-      repo: "https://github.com/isnayousuf/WordEmbed",
-      techStack: ["HTML", "CSS", "JavaScript"],
-    },
-    {
       name: "My Notes App",
-      video: "./assets/images/notes.mp4",
+      video: "/assets/images/notes.mp4",
       description:
         "MyNotes is a JavaScript web application that helps keep track of important notes. It allows adding, editing, and deleting notes.",
       repo: "https://github.com/isnayousuf/my-notes-app",
       techStack: ["HTML", "CSS", "JavaScript"],
     },
     {
+      name: "WordEmbed",
+      video: "/assets/images/wordembed.mp4",
+      description:
+        "WordEmbed is a JavaScript application that provides details of any word selected on a webpage. It includes origin, meaning, and pronunciation.",
+      repo: "https://github.com/isnayousuf/WordEmbed",
+      techStack: ["HTML", "CSS", "JavaScript"],
+    },
+    {
       name: "QR Code Generator",
-      video: "./assets/images/qrcode.mp4",
+      video: "/assets/images//qr-generator.mov",
       description:
         "A simple tool to generate QR codes from any text or link using JavaScript.",
       repo: "https://github.com/isnayousuf/qr-code-generator",
@@ -346,35 +352,38 @@ const projects = {
 
     {
       name: "Portfolio",
-      video: "./assets/images/portfolio.png",
+      projectDetails: {
+        hasExternalLink: true,
+        url: "https://www.isnayousuf.com/",
+      },
       description:
         "The portfolio here is one of the projects I have created.This portfolio has been created using HTML, CSS and JavaScript only. This project helped me to understand my skills better.",
       repo: "https://github.com/isnayousuf/Isnaportfolio",
       techStack: ["HTML", "CSS", "JavaScript"],
     },
-    {
-      name: "Weather App",
-      video: "./assets/images/weather.png",
-      description:
-        "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
-      repo: "https://github.com/isnayousuf/weather-application",
-      techStack: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      name: "Analog Clock",
-      video: "./assets/images/weather.png",
-      description:
-        "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
-      repo: "https://github.com/isnayousuf/weather-application",
-      techStack: ["HTML", "CSS", "JavaScript"],
-    },
+    // {
+    //   name: "Weather App",
+    //   video: "/assets/images/weather.png",
+    //   description:
+    //     "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
+    //   repo: "https://github.com/isnayousuf/weather-application",
+    //   techStack: ["HTML", "CSS", "JavaScript"],
+    // },
+    // {
+    //   name: "Analog Clock",
+    //   video: "/assets/images/analog-clock.png",
+    //   description:
+    //     "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
+    //   repo: "https://github.com/isnayousuf/weather-application",
+    //   techStack: ["HTML", "CSS", "JavaScript"],
+    // },
   ],
   CSS: [
     {
       name: "Carrom Board",
       displayImg: "/assets/images/carrom.png",
       description:
-        "This is one of the CSS artwork that I created while learning about CSS. This artwork helped me to understand the box-shadow property in an awesome way.",
+        "A detailed CSS artwork of a carrom board, created to explore the box-shadow property and improve CSS styling skills.",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/carrom-board",
       techStack: ["HTML", "CSS"],
     },
@@ -382,7 +391,7 @@ const projects = {
       name: "Ludo UI",
       displayImg: "/assets/images/ludo.png",
       description:
-        "This is one of the CSS artwork that I created while learning about CSS. This artwork helped me to understand the box-shadow property in an awesome way.",
+        "A colorful Ludo board design made purely with CSS, helping to understand box-shadow and layout techniques.",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/ludo-ui",
       techStack: ["HTML", "CSS"],
     },
@@ -391,7 +400,7 @@ const projects = {
       name: "Keyboard",
       displayImg: "/assets/images/keypad.png",
       description:
-        "This is a CSS artwork that I created while learning about CSS. This helped me to understand the positioning and layout property in CSS.",
+        "A CSS-rendered keyboard designed to practice positioning, flexbox, and layout structuring.",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/keyboard",
       techStack: ["HTML", "CSS"],
     },
@@ -399,21 +408,24 @@ const projects = {
     {
       name: "Alphabets",
       displayImg: "/assets/images/Alphabets.png",
-      description: "Add description here",
+      description:
+        "An artistic representation of alphabets using CSS, experimenting with typography and design principles.",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/alphabets",
       techStack: ["HTML", "CSS"],
     },
     {
       name: "Monitor",
       displayImg: "/assets/images/monitor.png",
-      description: "Add description here",
+      description:
+        "A sleek and minimal CSS artwork of a monitor, showcasing shadows, gradients, and proportions.",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/monitor",
       techStack: ["HTML", "CSS"],
     },
     {
       name: "Doremon Cartoon",
       displayImg: "/assets/images/doremon.png",
-      description: "Add description here",
+      description:
+        "A fun and creative CSS artwork of the beloved cartoon character Doraemon, crafted purely with CSS.",
       repo: "https://github.com/isnayousuf/css-artwork/tree/main/doremon-cartoon",
       techStack: ["HTML", "CSS"],
     },
@@ -476,19 +488,19 @@ function attachModalEventListeners() {
     button.addEventListener("click", function () {
       const category = this.getAttribute("data-category");
       const index = this.getAttribute("data-index");
-      const projectVideo =  document.getElementById("lightbox-video");
-       const projectImg = document.getElementById("lightbox-img");
-
       const project = projects[category][index];
-       console.log("Image Path:", project.displayImg);
-       if (project.video) {
-        console.log("goes inside if");
-        
+
+      if (project?.projectDetails) {
+        window.open(project.projectDetails.url, "_blank");
+      } else  {
+      const projectVideo =  document.getElementById("lightbox-video");
+      const projectImg = document.getElementById("lightbox-img");
+
+       if (project.video) {        
          projectVideo.style.display = "block";
          projectImg.style.display = "none";
          projectVideo.src = project.video || "";
        } else {
-        console.log("goes inside else");
 
          projectVideo.style.display = "none";
          projectImg.style.display = "block";
@@ -498,6 +510,7 @@ function attachModalEventListeners() {
       document.getElementById("lightbox-description").textContent = project.description;
       document.getElementById("lightbox-repo").href = project.repo;
       document.getElementById("lightbox").classList.add("active");
+    }
     });
   });
 }
