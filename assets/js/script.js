@@ -62,41 +62,6 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
-// /*=============== DARK LIGHT THEME ===============*/
-// const themeButton = document.getElementById("theme-button");
-// const darkTheme = "dark-theme";
-// const sunIcon = document.getElementById('sun-icon')
-
-// const selectedTheme = localStorage.getItem("selected-theme");
-
-// const getCurrentTheme = () =>
-//   document.body.classList.contains(darkTheme) ? "dark" : "light";
-//     themeButton.addEventListener('click', function() {
-    
-//          sunIcon.style.display= "block"
-//          themeButton.style.display = "none";
-//     })
-
-//     sunIcon.addEventListener('click', function(){
-//       sunIcon.style.display= "none"
-//       themeButton.style.display = "block";
-      
-
-//     })
-  
-// themeButton.addEventListener("click", () => {
-//   document.body.classList.toggle(darkTheme);
-//   localStorage.setItem("selected-theme", getCurrentTheme());
-// });
-
-// sunIcon.addEventListener("click", () => {
-//   document.body.classList.toggle(darkTheme);
-//   localStorage.setItem("selected-theme", getCurrentTheme());
-// });
-
-
-
-
 const themeButton = document.getElementById("theme-button");
 
 const currentTheme = localStorage.getItem("theme");
@@ -334,245 +299,283 @@ const sendEmail = (e)=> {
 contactForm.addEventListener('submit', sendEmail)
 sendBtn.addEventListener('click', sendEmail)
 
+// const reactProjects = [
+//   {
+//     name: "Youtube Clone",
+//     video: "./assets/images/notes.mp4", //Todo: add recording here
+//     description:
+//       "YouTube Clone built using React, Vite, and YouTube's Open API. This project features infinite scrolling, category-based feeds, search functionality, a 404 page, and full responsiveness.",
+//     repo: "https://github.com/isnayousuf/youtube-clone",
+//     techStack: ["HTML", "CSS", "ReactJs"],
+//   },
+//   {
+//     name: "News App",
+//     video: "./assets/images/wordembed.mp4", //Todo: add recording here
+//     description:
+//       "A simple and responsive news web application built using React and Bootstrap.This app allows users to search for news, filter by country, language, and category, and browse through paginated news articles.",
+//     repo: "https://github.com/isnayousuf/news-app",
+//     techStack: ["HTML", "Bootstrap", "ReactJS"],
+//   },
+// ];
 
+// const javascriptProjects = [
+//   {
+//     name: "WordEmbed",
+//     video: "./assets/images/wordembed.mp4",
+//     description:
+//       "WordEmbed is a JavaScript application that provides details of any word selected on a webpage. It includes origin, meaning, and pronunciation.",
+//     repo: "https://github.com/isnayousuf/WordEmbed",
+//     techStack: ["HTML", "CSS", "JavaScript"],
+//   },
+//   {
+//     name: "My Notes App",
+//     video: "./assets/images/notes.mp4",
+//     description:
+//       "MyNotes is a JavaScript web application that helps keep track of important notes. It allows adding, editing, and deleting notes.",
+//     repo: "https://github.com/isnayousuf/my-notes-app",
+//     techStack: ["HTML", "CSS", "JavaScript"],
+//   },
+//   {
+//     name: "QR Code Generator",
+//     video: "./assets/images/qrcode.mp4",
+//     description:
+//       "A simple tool to generate QR codes from any text or link using JavaScript.",
+//     repo: "https://github.com/isnayousuf/qr-code-generator",
+//     techStack: ["HTML", "CSS", "JavaScript"],
+//   },
 
+//   {
+//     name: "Portfolio",
+//     video: "./assets/images/portfolio.png",
+//     description:
+//       "The portfolio here is one of the projects I have created.This portfolio has been created using HTML, CSS and JavaScript only. This project helped me to understand my skills better.",
+//     repo: "https://github.com/isnayousuf/Isnaportfolio",
+//     techStack: ["HTML", "CSS", "JavaScript"],
+//   },
+//   {
+//     name: "Weather App",
+//     video: "./assets/images/weather.png",
+//     description:
+//       "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
+//     repo: "https://github.com/isnayousuf/weather-application",
+//     techStack: ["HTML", "CSS", "JavaScript"],
+//   },
+//   {
+//     name: "Analog Clock",
+//     video: "./assets/images/weather.png",
+//     description:
+//       "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
+//     repo: "https://github.com/isnayousuf/weather-application",
+//     techStack: ["HTML", "CSS", "JavaScript"],
+//   },
+// ];
 
+// const cssProjects = [
+//   {
+//     name: "Carrom Board",
+//     displayImg: "../images/carrom.png",
+//     description:
+//       "This is one of the CSS artwork that I created while learning about CSS. This artwork helped me to understand the box-shadow property in an awesome way.",
+//     repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
+//     techStack: ["HTML", "CSS"],
+//   },
+//   {
+//     name: "Keyboard",
+//     displayImg: "../images/keypad.png",
+//     description:
+//       " This is a CSS artwork that I created while learning about CSS. This helped me to understand the positioning and layout property in CSS.",
+//     repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
+//     techStack: ["HTML", "CSS"],
+//   },
 
+//   {
+//     name: "Alphabets",
+//     displayImg: "../images/Alphabets.png",
+//     description:
+//       "Add description here",
+//     repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
+//     techStack: ["HTML", "CSS"],
+//   },
+// ];
 
+const projects = {
+  ReactJs: [
+    {
+      name: "Youtube Clone",
+      video: "./assets/images/notes.mp4", //Todo: add recording here
+      description:
+        "YouTube Clone built using React, Vite, and YouTube's Open API. This project features infinite scrolling, category-based feeds, search functionality, a 404 page, and full responsiveness.",
+      repo: "https://github.com/isnayousuf/youtube-clone",
+      techStack: ["HTML", "CSS", "ReactJs"],
+    },
+    {
+      name: "News App",
+      video: "./assets/images/wordembed.mp4", //Todo: add recording here
+      description:
+        "A simple and responsive news web application built using React and Bootstrap.This app allows users to search for news, filter by country, language, and category, and browse through paginated news articles.",
+      repo: "https://github.com/isnayousuf/news-app",
+      techStack: ["HTML", "Bootstrap", "ReactJS"],
+    },
+  ],
+  JavaScript: [
+    {
+      name: "WordEmbed",
+      video: "./assets/images/wordembed.mp4",
+      description:
+        "WordEmbed is a JavaScript application that provides details of any word selected on a webpage. It includes origin, meaning, and pronunciation.",
+      repo: "https://github.com/isnayousuf/WordEmbed",
+      techStack: ["HTML", "CSS", "JavaScript"],
+    },
+    {
+      name: "My Notes App",
+      video: "./assets/images/notes.mp4",
+      description:
+        "MyNotes is a JavaScript web application that helps keep track of important notes. It allows adding, editing, and deleting notes.",
+      repo: "https://github.com/isnayousuf/my-notes-app",
+      techStack: ["HTML", "CSS", "JavaScript"],
+    },
+    {
+      name: "QR Code Generator",
+      video: "./assets/images/qrcode.mp4",
+      description:
+        "A simple tool to generate QR codes from any text or link using JavaScript.",
+      repo: "https://github.com/isnayousuf/qr-code-generator",
+      techStack: ["HTML", "CSS", "JavaScript"],
+    },
 
+    {
+      name: "Portfolio",
+      video: "./assets/images/portfolio.png",
+      description:
+        "The portfolio here is one of the projects I have created.This portfolio has been created using HTML, CSS and JavaScript only. This project helped me to understand my skills better.",
+      repo: "https://github.com/isnayousuf/Isnaportfolio",
+      techStack: ["HTML", "CSS", "JavaScript"],
+    },
+    {
+      name: "Weather App",
+      video: "./assets/images/weather.png",
+      description:
+        "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
+      repo: "https://github.com/isnayousuf/weather-application",
+      techStack: ["HTML", "CSS", "JavaScript"],
+    },
+    {
+      name: "Analog Clock",
+      video: "./assets/images/weather.png",
+      description:
+        "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
+      repo: "https://github.com/isnayousuf/weather-application",
+      techStack: ["HTML", "CSS", "JavaScript"],
+    },
+  ],
+  CSS: [
+    {
+      name: "Carrom Board",
+      displayImg: "../images/carrom.png",
+      description:
+        "This is one of the CSS artwork that I created while learning about CSS. This artwork helped me to understand the box-shadow property in an awesome way.",
+      repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
+      techStack: ["HTML", "CSS"],
+    },
+    {
+      name: "Keyboard",
+      displayImg: "../images/keypad.png",
+      description:
+        " This is a CSS artwork that I created while learning about CSS. This helped me to understand the positioning and layout property in CSS.",
+      repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
+      techStack: ["HTML", "CSS"],
+    },
 
-
-
-
-
-
-
-
-var modal = document.getElementById("myModal");
-let wordEmbedBtn = document.getElementById("word-embed-cta");
-let notesBtn = document.getElementById("notes-cta")
-let qrCodeBtn = document.getElementById("qr-cta");
-let portfolioBtn = document.getElementById("portfolio-cta");
-let weatherAppBtn = document.getElementById("weather-app-cta");
-let clockBtn = document.getElementById("clock-cta");
-let carromBtn = document.getElementById("carrom-cta");
-let pencilBtn = document.getElementById("pencil-cta");
-let keyboardBtn = document.getElementById("keyboard-cta");
-let phoneBtn = document.getElementById("phone-cta");
-let ludoBtn = document.getElementById("ludo-cta");
-
-var span = document.getElementsByClassName("close")[0];
-let modalData = document.getElementById("modal-info");
-
-wordEmbedBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = `
-  <div class="projectInfoContainer">
-  <div class="projectImage">
-  <video src="./assets/images/wordembed.mp4" loop controls autoplay muted></video>
-</div>
-  <p class="projectInfo">WordEmbed is a JavaScript application that provides the details of any word selected on a webpage. The details include word orign, word meaning, pronunciation etc. WordEmbed works by embedding the script in any third party website.</p>
-  
-  <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/WordEmbed" class="cv__btn">View Code</a>
-  </div>
-  </div>
- `;
+    {
+      name: "Alphabets",
+      displayImg: "../images/Alphabets.png",
+      description: "Add description here",
+      repo: "https://github.com/isnayousuf/WordEmbed", //Todo: Update url
+      techStack: ["HTML", "CSS"],
+    },
+  ],
 };
 
-notesBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = `
-  <div class="projectInfoContainer">
-  <div class="projectImage">
-  <video src="./assets/images/notes.mp4" loop controls autoplay muted></video>
-</div>
-  <p class="projectInfo">MyNotes is a javascript web application that helps us to keep track of our important items in the form of notes.It has been built with the functionality to Add a new note, edit an existing note or delete it.</p>
-  
-  <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/my-notes-app" class="cv__btn">View Code</a>
-  </div>
-  </div>
- `;
-};
+const projectContainer = document.querySelector(".project-listing");
 
-qrCodeBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = `
-  <div class="projectInfoContainer">
-  <div class="projectImage">
-  <video src="./assets/images/qr-generator.mov" loop controls autoplay muted></video>
-</div>
-  <p class="projectInfo">
-QR Code Generator is a JavaScript web application that generates a QR code for any input string. It allows users to easily create and download the generated QR code.</p>
-  
-  <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/qr-code-generator" class="cv__btn">View Code</a>
-  </div>
-  </div>
- `;
-};
+function displayProjects(category = "ReactJs") {
+  projectContainer.innerHTML = "";
 
-portfolioBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = ` <div class="projectInfoContainer">
+  const selectedProjects = projects[category];
 
-  <div class="projectImage">
-  <img src="./assets/images/portfolio.png" alt="css-carrom">
+  selectedProjects.forEach((project, index) => {
+    const projectCard = document.createElement("div");
+    projectCard.classList.add("project-card");
+    projectCard.setAttribute("data-id", category);
 
-  </div>
-  <p class="projectInfo">The portfolio here is one of the projects I have created.This portfolio has been created using HTML, CSS and JavaScript only. This project helped me to understand my skills better.</p>
-  
-  <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/single-page-portfolio-self" class="cv__btn">View Code</a>
-  </div>
-  
-  </div>`;
-};
+    projectCard.innerHTML = `
+            <h1 class="prj_name">${project.name}</h1>
+            <div>
+                <ul class="tech_stack">
+                    <p>Tech Stack Used:</p>
+                    ${project.techStack
+                      .map((tech) => `<li>${tech}</li>`)
+                      .join("")}
+                </ul>
+            </div>
+            <div class="know_more_container">
+                <button data-index="${index}" data-category="${category}" class="know_more">Know More</button>
+            </div>
+        `;
 
-weatherAppBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = ` <div class="projectInfoContainer">
+    projectContainer.appendChild(projectCard);
+  });
 
-  <div class="projectImage">
-  <img src="./assets/images/weather.png" alt="css-carrom">
+  attachModalEventListeners(); // Attach event listeners for "Know More" buttons
+}
 
-  </div>
-  <p class="projectInfo">This web application provides weather details of any location that is searched by the
-  user. This application has been created using the openweather api.
-</p>
-  
-  <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/weather-application" class="cv__btn">View Code</a>
-  </div>
-  
-  </div>`;
-};
-
-clockBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = ` <div class="projectInfoContainer">
-
-  <div class="projectImage">
-  <video src="./assets/images/clock.mp4" loop controls autoplay muted></video>
+// Call function initially to load all projects
+displayProjects();
 
 
-  </div>
-  <p class="projectInfo">This is also a JavaScript Project that I created while learning JavaScript. This is a simple clock.This project has been created to understand the basics of date object in JavaScript.
-  </p>
-  
-  <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/Analog_Clock" class="cv__btn">View Code</a>
-  </div>
-  
-  </div>`;
-};
+document.querySelectorAll("#filter-btns li").forEach((filterBtn) => {
+  filterBtn.addEventListener("click", function () {
+    const targetCategory = this.getAttribute("data-target");
 
-carromBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = ` <div class="projectInfoContainer">
+    displayProjects(targetCategory); // Update project list based on filter
 
-<div class="projectImage">
-<img src="./assets/images/carrom.png" alt="css-carrom">
-</div>
-<p class="projectInfo">This is one of the CSS artwork that I created while learning
-about CSS. This artwork helped me to understand the box-shadow property in an awesome way.
+    // Remove active class from all buttons, add to clicked one
+    document
+      .querySelectorAll("#filter-btns li")
+      .forEach((btn) => btn.classList.remove("active"));
+    this.classList.add("active");
+  });
+});
 
-</p>
 
-<div class="getCodeLink">
-  <a href="https://github.com/isnayousuf/css-artwork" class="cv__btn">View Code</a>
-</div>
+function attachModalEventListeners() {
+  document.querySelectorAll(".know_more").forEach((button) => {
+    button.addEventListener("click", function () {
+      const category = this.getAttribute("data-category");
+      const index = this.getAttribute("data-index");
+      const project = projects[category][index];
 
-</div>`;
-};
+      document.getElementById("lightbox-video").src = project.video || "";
+      document.getElementById("lightbox-description").textContent =
+        project.description;
+      document.getElementById("lightbox-repo").href = project.repo;
 
-pencilBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = `<div class="projectInfoContainer">
+      document.getElementById("lightbox").classList.add("active");
+    });
+  });
+}
 
-  <div class="projectImage">
-  <img src="./assets/images/pencil.png" alt="css-carrom">
-  </div>
-  <p class="projectInfo">This is one more  CSS artwork that I created while learning
-  about CSS. This artwork helped me to understand the gradients property in depth.
-  </p>
-  
-  <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/css-artwork" class="cv__btn">View Code</a>
-  </div>
-  
-  </div>`;
-};
+// Close the modal when clicking on 'X'
+document
+  .querySelector(".close-lightbox")
+  .addEventListener("click", function () {
+    document.getElementById("lightbox").classList.remove("active");
+  });
 
-keyboardBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = `
-
-  <div class="projectInfoContainer">
-
-  <div class="projectImage">
-  <img src="./assets/images/keypad.png" alt="css-carrom">
-
-</div>
-  <p class="projectInfo">
-  This is a CSS artwork that I created while learning
-  about CSS. This helped me to understand the positioning and layout property in CSS.
-  
-  </p>
-  
-  <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/css-artwork" class="cv__btn">View Code</a>
-  </div>
-  </div>
- `;
-};
-
-phoneBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = `
-
-  <div class="projectInfoContainer">
-
-  <div class="projectImage ludo-img">
-  <img src="./assets/images/Alphabets.png" alt="css-carrom">
-  </div>
-  <p class="projectInfo">
-  This is the CSS artwork that I created when I almost learned most of the properties. Tried to apply them in a single project so created this artwork.
-
-  </p>
-  
-  <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/css-artwork" class="cv__btn">View Code</a>
-  </div>
-  </div>
- `;
-};
-ludoBtn.onclick = function () {
-  modal.style.display = "block";
-  modalData.innerHTML = `<div class="projectInfoContainer">
-
-  <div class="projectImage ludo-img">
-  <img src="./assets/images/ludo.png" alt="css-carrom">
-  
-  </div>
-  <p class="projectInfo watch-info">
-  This is the CSS artwork that I created out of the growing love for CSS art and helped me to strengthen my CSS concepts
-  
-  </p>
-  
-  <div class="getCodeLink">
-    <a href="https://github.com/isnayousuf/css-artwork" class="cv__btn">View Code</a>
-  </div>
-  
-  </div>`;
-};
-
-span.onclick = function () {
-  modal.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+// Close when clicking outside the modal content
+document.getElementById("lightbox").addEventListener("click", function (event) {
+  if (event.target === this) {
+    this.classList.remove("active");
   }
-};
+});
+
