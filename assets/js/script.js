@@ -361,14 +361,14 @@ const projects = {
       repo: "https://github.com/isnayousuf/Isnaportfolio",
       techStack: ["HTML", "CSS", "JavaScript"],
     },
-    // {
-    //   name: "Weather App",
-    //   video: "/assets/images/weather.png",
-    //   description:
-    //     "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
-    //   repo: "https://github.com/isnayousuf/weather-application",
-    //   techStack: ["HTML", "CSS", "JavaScript"],
-    // },
+    {
+      name: "Weather App",
+      video: "/assets/images/weather-app.mov",
+      description:
+        "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
+      repo: "https://github.com/isnayousuf/weather-application",
+      techStack: ["HTML", "CSS", "JavaScript"],
+    },
     // {
     //   name: "Analog Clock",
     //   video: "/assets/images/analog-clock.png",
