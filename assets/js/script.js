@@ -365,7 +365,7 @@ const projects = {
       name: "Weather App",
       video: "/assets/images/weather-app.mov",
       description:
-        "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
+        "A web app that shows weather details for any searched location using the OpenWeather API",
       repo: "https://github.com/isnayousuf/weather-application",
       techStack: ["HTML", "CSS", "JavaScript"],
     },
