@@ -369,14 +369,14 @@ const projects = {
       repo: "https://github.com/isnayousuf/weather-application",
       techStack: ["HTML", "CSS", "JavaScript"],
     },
-    // {
-    //   name: "Analog Clock",
-    //   video: "/assets/images/analog-clock.png",
-    //   description:
-    //     "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
-    //   repo: "https://github.com/isnayousuf/weather-application",
-    //   techStack: ["HTML", "CSS", "JavaScript"],
-    // },
+    {
+      name: "Analog Clock",
+      video: "/assets/images/analog-clock.png",
+      description:
+        "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
+      repo: "https://github.com/isnayousuf/weather-application",
+      techStack: ["HTML", "CSS", "JavaScript"],
+    },
   ],
   CSS: [
     {
