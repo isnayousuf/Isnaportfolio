@@ -373,8 +373,8 @@ const projects = {
       name: "Analog Clock",
       video: "/assets/images/analog-clock.png",
       description:
-        "This web application provides weather details of any location that is searched by the user. This application has been created using the openweather api.",
-      repo: "https://github.com/isnayousuf/weather-application",
+        "A simple and elegant analog clock built using HTML, CSS, and JavaScript. This project visually represents time with smooth animations and dynamic updates, mimicking a real-world clock.",
+      repo: "https://github.com/isnayousuf/analog-clock",
       techStack: ["HTML", "CSS", "JavaScript"],
     },
   ],
