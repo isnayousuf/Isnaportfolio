@@ -371,7 +371,7 @@ const projects = {
     },
     {
       name: "Analog Clock",
-      video: "/assets/images/analog-clock.png",
+      video: "/assets/images/analog-clock.mov",
       description:
         "A simple and elegant analog clock built using HTML, CSS, and JavaScript. This project visually represents time with smooth animations and dynamic updates, mimicking a real-world clock.",
       repo: "https://github.com/isnayousuf/analog-clock",
